@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="blog list">
+    <h5 class="secondary-header h5">{{ page.tag | capitalize}}</h5>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Algorithm</th>
+                <th scope="col">Time complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                {% for post in site.categories[page.tag] %}
+                    <td><a class="post-link" href="{{ post.url }}">{{ post.title }}</a></td>
+                    <td>\({{ post.time }}\)</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+</div>

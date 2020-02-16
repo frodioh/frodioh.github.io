@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col">
+        <div id="archives">
+            <h3 class="secondary-header h5">Categories:</h3>
+            <ul class="list-group list-group-flush">
+                {% for category in site.categories %}
+                    <li class="list-group-item">
+                        {% capture category_name %}{{ category | first }}{% endcapture %}
+                        <h3 class="category-header"><a href="/category/{{ category_name }}">{{ category_name | capitalize }}</a></h3>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

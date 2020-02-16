@@ -1,0 +1,18 @@
+title: PNP - algorithm archive
+email: fedotov.dev@gmail.com
+description: >-
+  Algorithm archive written in Go language.
+baseurl: ""
+url: ""
+
+collections:
+  category:
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"

@@ -1,0 +1,39 @@
+---
+---
+
+@import "bootstrap/bootstrap.scss";
+
+html, body {
+    height: 100%;
+    background: #1509d08c;
+}
+
+.container {
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,.3);
+    height: 100%;
+    background: #fff;
+}
+
+.main-header {
+    margin-bottom: 20px;
+}
+
+.main-header a {
+    color: #092bd0;
+}
+
+.secondary-header {
+    margin-bottom: 20px;
+}
+
+.category-header a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.post-link {
+    color: #000;
+    text-decoration: underline;
+}
